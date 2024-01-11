@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projecten</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="index-body">
+    <header class="header">
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img src="assets/logo2.png" class="logo" alt="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutme.html">About Me</a></li>
+          <li><a href="projecten.html">Projecten</a></li>
+          <li><a href="#Werkplekleren">Werkplekleren</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="info">
+      <h3>Bootstrap Thema site</h3>
+
+      <p>
+        For my project, I'm building a website with Bootstrap, which could be a
+        portfolio or a theme site. <br />
+        The main goal is to make it look good and work well. <br />
+        The site will have a responsive layout, meaning it'll adjust <br />
+        nicely to any screen size using Bootstrap's grid system. <br />
+        It'll also have a navigationbar that changes to fit better on smaller
+        screens. <br />
+        This way, the website will be easy to use and look great on any device.
+        <br />
+      </p>
+
+      <h3>Project Evolution and Approach</h3>
+
+      <p>
+        The project kicked off with thorough planning, emphasizing a clear and
+        beautiful design.<br />
+        A minimalistic approach was adopted to enhance clarity and ease of
+        navigation.<br />
+        Careful attention was given to the visual elements, with a focus on
+        typography and color choices, <br />
+        aiming to strike a balance between aesthetic appeal and accessibility.
+      </p>
+      <section class="linkedin1">
+        <a href="https://github.com/ahmedk1991/Portfolio-html" target="_blank"
+          >View Project Code</a
+        >
+      </section>
+    </section>
+
+    <footer>
+      <p>&copy; 2024 Ahmed's Portfolio</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navUL = document.querySelector(".navbar ul");
+
+        hamburger.addEventListener("click", function () {
+          navUL.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>

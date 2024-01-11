@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html {
+    width: 100%;
+    max-width: 100%;
+}
+
+.index-body, .header {
+    width: 100%;
+    background: url('assets/5968949.jpg') center/cover no-repeat;
+    height: 100vh;
+    position: relative;
+    font-family: sans-serif;
+}
+
+.header {
+    height: 32vh;
+}
+
+.navbar {
+    width: 85%;
+    padding: 15px 20px;
+    display: flex;
+    margin: auto;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.navbar .logo {
+    width: 160px;
+    cursor: pointer;
+}
+
+.hamburger-menu {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger-menu span {
+    height: 3px;
+    width: 25px;
+    background: black;
+    margin-bottom: 4px;
+    border-radius: 2px;
+}
+
+ul {
+    padding: 0;
+    list-style: none;
+}
+
+ul li {
+    display: inline-block;
+    padding: 15px 16px;
+}
+
+ul li a {
+    font-size: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    color: rgb(199, 170, 4);
+}
+
+ul li a:hover {
+    color: rgb(219, 205, 125);
+}
+
+@media (max-width: 720px) {
+    .navbar {
+        justify-content: center;
+    }
+
+    ul li {
+        display: block;
+        text-align: center;
+    }
+
+    ul {
+        display: none;
+    }
+
+    .hamburger-menu {
+        display: flex;
+    }
+}
+
+.info {
+    margin: 3% 7%;
+    text-align: center;
+}
+
+.info h1, .info h3, .info p {
+    color: black;
+    margin: 2% 0;
+}
+
+.info h1 {
+    font-size: 3em; 
+}
+
+.info h3 {
+    font-size: 2em;
+}
+
+.info a {
+    text-decoration: none;
+    color: #fff;
+    background: black;
+    margin: 25px 0;
+    padding: 10px;
+    border-radius: 10px;
+    display: inline-block;
+    transition: .5s ease;
+}
+
+.info a:hover {
+    background: rgb(219, 205, 125);
+}
+.contact-info{
+
+    padding-left: 40%;
+    
+}
+
+.main-content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.image, .icons {
+    text-align: center;
+    margin-top: 3%;
+    
+}
+.git, .linkedin{
+
+width:90px;
+height:auto;
+}
+.info span{
+
+    color:rgb(219, 205, 125);
+}
+
+.image img, .icons img {
+    max-width: 40%; 
+    height: auto;
+    border-radius: 50px;
+}
+
+@media (max-width: 720px) {
+    .image img {
+        max-width: 70%;
+        margin: 20px auto;
+    }
+
+    .main-content {
+        flex-direction: column-reverse;
+    }
+    .navbar ul li {
+        padding: 10px 5px; 
+        
+    }
+
+    
+}
+
+.show {
+    display: block;
+}
+
+footer {
+    padding-top:7%;
+    text-align: center;
+}
+
+@media (max-width: 600px) {
+    .info h1, .info h3 {
+        font-size: 1.2em; 
+    }
+}
