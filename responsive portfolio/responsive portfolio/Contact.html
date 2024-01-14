@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Me - My Portfolio</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="index-body">
+    <header class="header">
+      <nav class="navbar">
+        <div class="hamburger-menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <img src="assets/logo2.png" class="logo" alt="logo" />
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="Aboutme.html">About Me</a></li>
+          <li><a href="projecten.html">Projecten</a></li>
+          <li><a href="#Werkplekleren">Werkplekleren</a></li>
+          <li><a href="Contact.html">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+      <main class="contact-info">
+        <h3>Contact Me</h3>
+        <p>If you have any questions or would like to get in touch !</p>
+        <form action="your-server-side-script" method="POST">
+          <label for="name">Name:</label><br />
+          <input
+            type="text"
+            id="name"
+            name="name"
+            required
+            style="width: 250px; height: 40px"
+          /><br />
+
+          <label for="email">Email:</label><br />
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            style="width: 250px; height: 40px"
+          /><br />
+
+          <label for="message">Message:</label><br />
+          <textarea
+            id="message"
+            name="message"
+            required
+            style="width: 250px; height: 170px"
+          ></textarea
+          ><br />
+
+          <input type="submit" value="Send" />
+        </form>
+      </main>
+    </div>
+    <footer class="footer-contactme">
+      <p>&copy; 2024 Ahmed's Portfolio</p>
+    </footer>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const hamburger = document.querySelector(".hamburger-menu");
+        const navUL = document.querySelector(".navbar ul");
+
+        hamburger.addEventListener("click", function () {
+          navUL.classList.toggle("show");
+        });
+      });
+    </script>
+  </body>
+</html>
